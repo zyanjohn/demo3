@@ -1,0 +1,27 @@
+ 611  git --version
+  612  ls
+  613  cd ~
+  614  ls
+  615  cd Desktop/moon
+  616  git init
+  617  ls -a
+  618  git add .
+  619  git commit -m "initial commit"
+  620  git config --global user.name "ann"
+  621  git config --global user.email "zyanjohn753@gmail.com"
+  622  git commit -m "initial commit"
+  623  touch hello.txt
+  624  echo "heelo" >> hello.txt
+  625  git add .
+  626  git status
+  627  git commit -m "initial commit"
+  628  git branch -M main
+  629  git remote add origin https://github.com/zyanjohn/demo3.git
+  630  git push -u origin main
+  631  git pull --rebase origin main
+  632  git push origin main
+        -> username
+        ->password: token code // generate classic token ...from settings->Developer settings-> generate new token
+  633  clear
+  634  history
+

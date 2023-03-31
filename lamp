@@ -25,6 +25,10 @@ sudo apt update
   564  cd /var/www/html
   565  gedit hello.php
   566  sudo gedit hello.php
+            <?php
+            echo "Hello, World!";
+            ?>
+
   567  sudo apt-get install phpmyadmin
   568  history
 

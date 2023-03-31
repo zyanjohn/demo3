@@ -1,0 +1,40 @@
+how to connect database created in myphpadmin to django project
+
+To connect a MySQL database created in phpMyAdmin to a Django project, you need to follow these steps:
+
+1.Install the MySQL client library for Python: To interact with the MySQL database, you will need to install the MySQL client library for Python. You can install it using the following command:
+->pip install mysqlclient
+
+2.Configure Django settings.py: In your Django project, open the settings.py file and add the following configuration to the DATABASES dictionary:
+settings.py
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'your_database_name',
+        'USER': 'your_mysql_username',
+        'PASSWORD': 'your_mysql_password',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
+}
+
+
+Replace the 'your_database_name', 'your_mysql_username' and 'your_mysql_password' placeholders with the appropriate values for your MySQL database.
+
+
+3.Run Django database migrations: If you have not already done so, you will need to run Django database migrations to create the necessary tables in your MySQL database. You can do this by running the following command:
+->python manage.py migrate
+This will create the necessary tables in your MySQL database.
+
+4.Test the connection: Finally, you can test the connection by running the Django development server using the following command:
+    ->python manage.py runserver
+
+If the connection is successful, you should be able to access your Django application by navigating to http://localhost:8000 in your web browser.
+
+That's it! You have successfully connected a MySQL database created in phpMyAdmin to your Django project.
+
+
+
+
+
+

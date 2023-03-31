@@ -17,7 +17,8 @@
   627  git commit -m "initial commit"
   628  git branch -M main
   629  git remote add origin https://github.com/zyanjohn/demo3.git
-  630  git push -u origin main
+  630  git push -u origin main or 
+       git push -f origin main
   631  git pull --rebase origin main
   632  git push origin main
         -> username

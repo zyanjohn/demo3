@@ -1,0 +1,14 @@
+->lsb_release -a
+->apt install phpmyadmin  -y
+->..............configurations
+->mysql -u root -p
+Enter the password:
+   (mysql)>
+		->show databases;
+		->use phpmyadmin;
+		-> create user user@localhost identified by 'linuxhelp';
+		->grant all on phpmyadmin.* to user@localhost;
+		->flush privileges;
+		->exit
+		->systemctl resatrt apache2
+		->
